@@ -1,0 +1,60 @@
+{
+    "data":{
+        "main":{
+            "about": "Hi. Feel free to checkout my blogs. I post about web development currently focused in React 😄."
+        },
+        "links":[
+            {
+                "display": "Github",
+                "link": "https://github.com/adzzdev"
+            },
+            {
+                "display": "Stack Overflow",
+                "link": "https://stackoverflow.com/users/9765927/adzzv"
+            }
+        ],
+        "mainBlogID": "13",
+        "featuredBlogIDs":[],
+        "blogs":[
+            {
+                "id": "13",
+                "title": "Deploy and host React App to Firebase",
+                "shortDescription": "Guide on how to deploy your react applications in firebase.",
+                "author":"adzz",
+                "path": "13",
+                "topic": "React",
+                "tags":["React", "Firebase"],
+                "dateCreated": "2022-06-08T22:30:00+08:00",
+                "markdown":"",
+                "markdownLocal": "2022060802.md",
+                "preview": "partial"
+            },
+            {
+                "id": "12",
+                "title": "Markdown to JSX npm libary for Blogging.",
+                "shortDescription": "",
+                "author":"adzz",
+                "path": "12",
+                "topic": "React",
+                "tags":["React", "Libary"],
+                "dateCreated": "2022-06-08T01:49:00+08:00",
+                "markdown":"",
+                "markdownLocal": "2022060801.md",
+                "preview": "full"
+            },
+            {
+                "id": "4",
+                "title": "blog init",
+                "shortDescription": "So this is the first application that I created using CRA. I've decided that I should focus more on the functionality than the design. Yep, css is really hard. Right now I am still checking out frontend development using these types of framework and I am really enjoying it. For now I am trying out and learning REACT but I look forward to checking out other js frameworks as well.",
+                "author":"adzz",
+                "path": "4",
+                "topic": "General",
+                "tags":["Tag 1", "Tag 2", "Tag 3"],
+                "dateCreated": "2022-05-26T03:15:00+08:00",
+                "markdown":"",
+                "markdownLocal": "",
+                "preview": "partial"
+            }
+        ]
+    }
+}

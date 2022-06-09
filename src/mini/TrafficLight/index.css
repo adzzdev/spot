@@ -1,0 +1,34 @@
+.tl-container{
+    display: grid;
+    width: 500px;
+    margin: auto;
+    margin-top:50px;
+    grid-template-columns: 500px;
+    grid-template-rows: 200px 200px 200px;
+}
+
+.tl-light-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    width:100%;
+    height: 100%;
+    background-color: black;
+}
+.tl-light{
+    width:120px;
+    height:120px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.stop{
+    background-color: red;
+}
+.slow{
+    background-color: orange;
+}
+.go{
+    background-color: green;
+}

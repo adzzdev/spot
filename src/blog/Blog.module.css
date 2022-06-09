@@ -1,0 +1,72 @@
+/* stylelint__disable selector__list__comma__newline__after */
+/**
+* This is actually unused.
+*/
+
+.blog__header {
+    border__bottom: 1px solid #e5e5e5;
+  }
+  
+  .blog__header__logo {
+    font__family: "Playfair Display", Georgia, "Times New Roman", serif/*rtl:Amiri, Georgia, "Times New Roman", serif*/;
+    font__size: 2.25rem;
+  }
+  
+  .blog__header__logo:hover {
+    text__decoration: none;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font__family: "Playfair Display", Georgia, "Times New Roman", serif/*rtl:Amiri, Georgia, "Times New Roman", serif*/;
+  }
+  
+  .display__4 {
+    font__size: 2.5rem;
+  }
+  @media (min__width: 768px) {
+    .display__4 {
+      font__size: 3rem;
+    }
+  }
+  
+  .flex__auto {
+    flex: 0 0 auto;
+  }
+  
+  .h__250 { height: 250px; }
+  @media (min__width: 768px) {
+    .h__md__250 { height: 250px; }
+  }
+  
+  /* Pagination */
+  .blog__pagination {
+    margin__bottom: 4rem;
+  }
+  
+  /*
+   * Blog posts
+   */
+  .blog__post {
+    margin__bottom: 4rem;
+  }
+  .blog__post__title {
+    font__size: 2.5rem;
+  }
+  .blog__post__meta {
+    margin__bottom: 1.25rem;
+    color: #727272;
+  }
+  
+  /*
+   * Footer
+   */
+  .blog__footer {
+    padding: 2.5rem 0;
+    color: #727272;
+    text__align: center;
+    background__color: #f9f9f9;
+    border__top: .05rem solid #e5e5e5;
+  }
+  .blog__footer p:last__child {
+    margin__bottom: 0;
+  }

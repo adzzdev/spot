@@ -1,0 +1,85 @@
+{
+    "roles":[
+        {
+            "id":0,
+            "name":"Unknown",
+            "color":"secondary"
+        },
+        {
+            "id":1,
+            "name":"ADMIN",
+            "color":"danger"
+        },
+        {
+            "id":2,
+            "name":"MOD",
+            "color":"warning"
+        },
+        {
+            "id":3,
+            "name":"DEV",
+            "color":"primary"
+        },
+        {
+            "id":4,
+            "name":"Visitor",
+            "color":"secondary"
+        }
+
+    ],
+    "users": [
+        {
+            "id": 1,
+            "publicID": "AD104092022A",
+            "firstName":"Adzz",
+            "lastName": "",
+            "userName":"adzz",
+            "email": "adzz.dev@gmail.com",
+            "password":"password123",
+            "address": "Makati, Philippines",
+            "phoneNumber": "523712312",
+            "role":[1,2,3],
+            "badges":[
+                { "name": "Newbie", "color": "secondary" },
+                { "name": "Web Development", "color": "success" },
+                { "name": "Javascript", "color": "warning" }
+            ],
+            "profileURL": "https://avatars.dicebear.com/api/identicon/adzz.svg",
+            "headline": "Trying to learn how to code."
+        },
+        {
+            "id": 2,
+            "publicID": "JD104092022S",
+            "firstName":"Joana",
+            "lastName": "Doe",
+            "userName":"joanadoe",
+            "email": "jodoe@mailinator.com",
+            "password":"password123",
+            "address": "5th Wall St Sample City US",
+            "phoneNumber": "523712312",
+            "role":[4],
+            "badges":[
+                { "name": "Newbie", "color": "secondary" }
+            ],
+            "profileURL": "https://avatars.dicebear.com/api/identicon/joanadoe.svg",
+            "headline": "Sample headline"
+        },
+        {
+            "id": 3,
+            "publicID": "JD204092022S",
+            "firstName":"John",
+            "lastName": "Doe",
+            "userName":"doemealittle",
+            "email": "jdoe@mailinator.com",
+            "password":"password123",
+            "address": "5th Wall St Sample City US",
+            "phoneNumber": "523712312",
+            "role":[4],
+            "badges":[
+                { "name": "Newbie", "color": "secondary" }
+            ],
+            "profileURL": "https://avatars.dicebear.com/api/identicon/johndoe.svg",
+            "headline": "Sample headline"
+        }
+    ]
+}

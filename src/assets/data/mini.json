@@ -1,0 +1,112 @@
+{
+    "data" : [
+        {
+            "dateCreated": "2022/05/20",
+            "author": "adzz",
+            "title": "Traffic Light",
+            "description": "This is a sample Description",
+            "path": {
+                "value": "trafficlight",
+                "link": "trafficlight",
+                "type": "link"
+            },
+            "markdown": "```sample code here```"
+        },
+        {
+            "dateCreated": "Ongoing",
+            "author": "adzz",
+            "title": "Tic-Tac-Toe",
+            "description": "This is a sample Description",
+            "path": {
+                "value": "Tic-tac-toe",
+                "link": "tictactoe",
+                "type": "link"
+            },
+            "markdown": "```sample code here```"
+        },
+        {
+            "dateCreated": "Not Started",
+            "author": "adzz",
+            "title": "Battleship",
+            "description": "This is a sample Description",
+            "path": {
+                "value": "Battleship",
+                "link": "battleship",
+                "type": "link"
+            },
+            "markdown": "```sample code here```"
+        },
+        {
+            "dateCreated": "Not Started",
+            "author": "adzz",
+            "title": "Simple Calculator",
+            "description": "Simple Web Calculator",
+            "path": {
+                "value": "Calculator",
+                "link": "calculator",
+                "type": "link"
+            },
+            "markdown": "```sample code here```"
+        },
+        {
+            "dateCreated": "Not Started",
+            "author": "adzz",
+            "title": "Task Management App",
+            "description": "Task Management App with basic CRUD functionality",
+            "path": {
+                "value": "TaskManagementApp",
+                "link": "taskmanagementapp",
+                "type": "link"
+            },
+            "markdown": "```sample code here```"
+        },
+        {
+            "dateCreated": "Not Started",
+            "author": "adzz",
+            "title": "Coin Flip App",
+            "description": "Create Rooms, fight 50:50 battles",
+            "path": {
+                "value": "CoinFlipApp",
+                "link": "coinflipapp",
+                "type": "link"
+            },
+            "markdown": "```sample code here```"
+        },
+        {
+            "dateCreated": "Not Started",
+            "author": "adzz",
+            "title": "Chat App",
+            "description": "Chat with yourself.",
+            "path": {
+                "value": "ChatApp",
+                "link": "chatapp",
+                "type": "link"
+            },
+            "markdown": "```sample code here```"
+        },
+        {
+            "dateCreated": "Not Started",
+            "author": "adzz",
+            "title": "Chat Bot App",
+            "description": "Chat with a bot.",
+            "path": {
+                "value": "ChatBotApp",
+                "link": "chatbotapp",
+                "type": "link"
+            },
+            "markdown": "```sample code here```"
+        },
+        {
+            "dateCreated": "Not Started",
+            "author": "adzz",
+            "title": "Discord Bot App",
+            "description": "Control your Discord Server Bot",
+            "path": {
+                "value": "DiscordBotApp",
+                "link": "discordbotapp",
+                "type": "link"
+            },
+            "markdown": "```sample code here```"
+        }
+    ]
+}
