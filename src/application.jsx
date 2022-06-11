@@ -13,6 +13,7 @@ import BlogHome from './blog/BlogHome';
 import BlogDetails from './blog/BlogDetails';
 import About from './pages/About';
 import Staging from './pages/Staging';
+import ComponentIndex from './pages/Component';
 
 
 export default function Application(props) {
@@ -36,6 +37,9 @@ export default function Application(props) {
 
                             <Route path="blog" element={<BlogHome/>}></Route>
                             <Route path="blog/:id" element={<BlogDetails></BlogDetails>}></Route>
+
+                            <Route path="component" element={<ComponentIndex/>}></Route>
+                            <Route path="component/:name" element={<div className='display-6 mt-4'>Component Details JSX here.</div>}></Route>
 
                             <Route path="about" element={<About/>}></Route>
                             

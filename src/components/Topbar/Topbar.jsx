@@ -20,11 +20,11 @@ export default function Topbar() {
         </button>
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-            {/* <li className="nav-item">
-              <NavLink className="nav-link disabled" aria-current="page" to="components">
+            <li className="nav-item">
+              <NavLink className="nav-link" aria-current="page" to="component">
                 Components
               </NavLink>
-            </li> */}
+            </li>
             <li className="nav-item">
               <NavLink className="nav-link" aria-current="page" to="blog">
                 Blog
