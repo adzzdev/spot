@@ -24,6 +24,18 @@ export class Badge{
     }
 }
 
+export class Site{
+    /**
+     * 
+     * @param {String} site 
+     * @param {String} link 
+     */
+     constructor(site, link){
+        this.site = site;
+        this.link = link;
+    }
+}
+
 /**
  * User Full Data Model
  */
@@ -40,11 +52,13 @@ class User{
      * @param {String} address 
      * @param {String} phoneNumber 
      * @param {Array<Number>} role 
+     * @param {String} title
      * @param {Array<Badge>} badges
      * @param {String} profileURL 
      * @param {String} headline
+     * @param {Array<Site>} links
      */
-    constructor(id, publicID, firstName, lastName, userName, email, password, address,phoneNumber, role, badges, profileURL, headline){
+    constructor(id, publicID, firstName, lastName, userName, email, password, address,phoneNumber, role, title, badges, profileURL, headline, links){
         this.id = id;
         this.publicID = publicID;
         this.firstName = firstName;
@@ -58,6 +72,7 @@ class User{
         this.badges = badges;
         this.profileURL = profileURL;
         this.headline = headline
+        this.links = links;
     }
 }
 
@@ -76,9 +91,28 @@ export class NullUser{
             id: 0,
             name: "None"
         };
+        this.title = "Unknown";
         this.badges = [new Badge("0","Unknown", "secondary")]
         this.profileURL = "https://avatars.dicebear.com/api/identicon/unknown.svg";
-        this.headline = "Lorem ipsum dolor sit amet."
+        this.headline = "Lorem ipsum dolor sit amet.";
+        this.links = [
+            {
+                "site": "twitter",
+                "link": "twitter.com"
+            },
+            {
+                "site": "github",
+                "link": "github.com"
+            },
+            {
+                "site": "facebook",
+                "link": "facebook.com"
+            },
+            {
+                "site": "google",
+                "link": "google.com"
+            }
+        ]
     }
 }
 
@@ -100,8 +134,10 @@ export default class{
         this.address = user.address;
         this.phoneNumber = user.phoneNumber;
         this.role = user.role;
+        this.title = user.title;
         this.badges = user.badges;
         this.profileURL = user.profileURL;
-        this.headline = user.headline
+        this.headline = user.headline;
+        this.links = user.links;
     }
 }
