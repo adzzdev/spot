@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components';
 import userService from '../../../db/UserService';
 import palletes from "../../../assets/themes/base/palletes";
+import breakpoints from "../../../assets/themes/base/breakpoints"
 
 export default function AuthorInfo(props) {
   let author = null
@@ -75,10 +76,15 @@ export default function AuthorInfo(props) {
 
 /**Hoisted up*/
 const AuthorInfoWidget = styled.aside`
+    position: sticky;
+    top: 1.5rem;
     border: 1px solid #eeee;
     background: ${palletes.dark.c1};
     padding: 30px;
     border-bottom: 1px solid #eeee;
+    @media screen and (min-width: ${breakpoints.values.lg}){
+      margin: 0px 20px;
+    }
 `;
 
 //basic info

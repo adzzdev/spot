@@ -15,6 +15,8 @@ import About from './pages/About';
 import Staging from './pages/Staging';
 import ComponentIndex from './pages/Component';
 
+import ShowcaseFactory from './components/__module/ShowcaseFactory';
+
 
 export default function Application(props) {
     return(
@@ -39,7 +41,10 @@ export default function Application(props) {
                             <Route path="blog/:id" element={<BlogDetails></BlogDetails>}></Route>
 
                             <Route path="component" element={<ComponentIndex/>}></Route>
-                            <Route path="component/:name" element={<div className='display-6 mt-4'>Component Details JSX here.</div>}></Route>
+                            <Route path="component/infobox" element={<ShowcaseFactory componentPath="infobox"></ShowcaseFactory>}></Route>
+                            
+                           
+                            
 
                             <Route path="about" element={<About/>}></Route>
                             

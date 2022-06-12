@@ -11,6 +11,7 @@ import DemoFactory from '../lrn-hooks/demos/DemoFactory';
 import markdown1 from "../assets/markdown/blog/2022060201.md"
 import styled from 'styled-components';
 import AuthorInfo from '../blog/components/AuthorInfo';
+import InfoBox from '../components/InfoBox/InfoBox';
 
 
 const SampleA = ({ children, ...props }) => (
@@ -43,8 +44,21 @@ export default function Staging() {
           .catch(err => console.log(err));
   });
   return (
+    
     <div className='container mt-4'>
       <div className='row'>
+      <div className="col-lg-6 mb-2">
+        <div className='card'>
+          <div className='card-header'>
+            Sample Form
+          </div>
+          <div className='card-body'> 
+            <InfoBox></InfoBox>
+          </div>
+        </div>
+      </div>
+
+
       <div className="col-lg-6 mb-2">
         <div className='card'>
           <div className='card-header'>
