@@ -1,18 +1,18 @@
 import React from 'react'
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 
-import SampleForm from '../components/__samples/SampleForm';
-import SampleMoment from "../components/__samples/SampleMoment";
-import {SampleButtonHOC} from "../components/__samples/SampleHOC"
-import { SampleMarkdown_2 } from '../components/__samples/SampleMarkdown';
+import SampleForm from '../../components/__samples/SampleForm';
+import SampleMoment from "../../components/__samples/SampleMoment";
+import {SampleButtonHOC} from "../../components/__samples/SampleHOC"
+import { SampleMarkdown_2 } from '../../components/__samples/SampleMarkdown';
 import { useEffect, useState } from 'react';
-import DemoFactory from '../lrn-hooks/demos/DemoFactory';
+import DemoFactory from '../../lrn-hooks/demos/DemoFactory';
 
-import markdown1 from "../assets/markdown/blog/2022060201.md"
+import markdown1 from "../../assets/markdown/blog/2022060201.md"
 import styled from 'styled-components';
-import AuthorInfo from '../blog/components/AuthorInfo';
-import InfoBox from '../components/InfoBox/InfoBox';
-import FormControl from '../components/Form/FormControl';
+import AuthorInfo from '../../blog/components/AuthorInfo';
+import InfoBox from '../../components/InfoBox/InfoBox';
+import FormControl from '../../components/Form/FormControl';
 
 import { Form, Button } from 'react-bootstrap';
 
@@ -37,7 +37,7 @@ export default function Staging() {
   const [post, setPost] = useState('');
 
   useEffect(() => {
-      import(`../assets/markdown/blog/2022060201.md`)
+      import(`../../assets/markdown/blog/2022060201.md`)
           .then(res => {
               fetch(res.default)
                   .then(res => res.text())

@@ -1,5 +1,5 @@
-import Table from "../components/Table/TableFactory";
-import InfoBox from "../components/InfoBox/InfoBox";
+import Table from "../../components/Table/TableFactory";
+import InfoBox from "../../components/InfoBox/InfoBox";
 
 const COMPONENTS = [
     {
