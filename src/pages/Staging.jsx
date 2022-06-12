@@ -12,6 +12,9 @@ import markdown1 from "../assets/markdown/blog/2022060201.md"
 import styled from 'styled-components';
 import AuthorInfo from '../blog/components/AuthorInfo';
 import InfoBox from '../components/InfoBox/InfoBox';
+import FormControl from '../components/Form/FormControl';
+
+import { Form, Button } from 'react-bootstrap';
 
 
 const SampleA = ({ children, ...props }) => (
@@ -47,6 +50,37 @@ export default function Staging() {
     
     <div className='container mt-4'>
       <div className='row'>
+      <div className="col-lg-6 mb-2">
+        <div className='card'>
+          <div className='card-header'>
+            Sample Form
+          </div>
+          <div className='card-body'> 
+              <FormControl></FormControl>
+              <Form>
+              <Form.Group className="mb-3" controlId="formBasicEmail">
+                <Form.Label>Email address</Form.Label>
+                <Form.Control type="email" placeholder="Enter email" />
+                <Form.Text className="text-muted">
+                  We'll never share your email with anyone else.
+                </Form.Text>
+              </Form.Group>
+
+              <Form.Group className="mb-3" controlId="formBasicPassword">
+                <Form.Label>Password</Form.Label>
+                <Form.Control type="password" placeholder="Password"/>
+              </Form.Group>
+              <Form.Group className="mb-3" controlId="formBasicCheckbox">
+                <Form.Check type="checkbox" label="Check me out" />
+              </Form.Group>
+              <Button variant="primary" type="submit">
+                Submit
+              </Button>
+            </Form>
+          </div>
+        </div>
+      </div>
+
       <div className="col-lg-6 mb-2">
         <div className='card'>
           <div className='card-header'>

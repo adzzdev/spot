@@ -12,8 +12,8 @@ const COMPONENTS = [
             "link": "infobox",
             "type": "link"
         },
+        
     }
-    
 ]
 
 
@@ -22,18 +22,25 @@ const COMPONENTS = [
 export default function ComponentIndex(){
 
     const tableColumns = ["Date", "Author", "Title", "Description", "Path"];
+    const authors = [];
+    COMPONENTS.forEach(function(component){
+        if(!authors.includes(component.author)){
+            authors.push(component.author);
+        }
+    })
     return (
         <>
             <div className="mt-4">
                 <h1>Components</h1>
             </div>
+            
             <section className="content mt-4">
                 <div className="row">
                     <div className="col-lg-6 col-12 mt-lg-0 mt-1">
-                        <InfoBox dataLabel="Component Count:" dataText={`${COMPONENTS.length}`} iconBGClass={"bg-primary"} iconClass={"bi bi-person"}></InfoBox>
+                        <InfoBox dataLabel="Components" dataText={`${COMPONENTS.length}`} iconBGClass={"bg-warning"} iconClass={"bi bi-grid-1x2-fill"}></InfoBox>
                     </div>
                     <div className="col-lg-6 col-12 mt-lg-0 mt-1">
-                        <InfoBox iconBGClass={"bg-warning"}></InfoBox>
+                        <InfoBox dataLabel="Authors" dataText={`${authors.length}`} iconBGClass={"bg-primary"} iconClass={"bi bi-person"}></InfoBox>
                     </div>
                     {/* Tabular Report */}
                     <div className="pt-4 pb-4">
