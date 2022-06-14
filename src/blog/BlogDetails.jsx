@@ -17,7 +17,7 @@ export default function BlogDetails() {
 
     const blogMD = useBlogMDFetch(blog.markdownLocal);
   return (
-    <div className="container-fluid mt-4">
+    <div className="container mt-4">
         <div className="row">
         <div className="col-xl-8">
     <article className="blog-post mb-4">

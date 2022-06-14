@@ -9,8 +9,8 @@ const PRISM_STYLES = {
     vscDarkPlus:vscDarkPlus
 }
 export default function SyntaxHighlighter(props) {
-  console.log(props.style);
-  console.log(props);
+  // console.log(props.style);
+  // console.log(props);
   return (
     <Prism language={props.language} style={PRISM_STYLES[props.styleName]}>
       {props.children}

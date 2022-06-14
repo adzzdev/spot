@@ -28,7 +28,7 @@ export default function PartialBlogPreview(props) {
   }
   return (
     <article className="blog-post mb-4">
-      <TitleLink href={`/blog/${data["id"]}`} target={"_blank"}><h1 className="blog-post-title mb-1">{data["title"]}</h1></TitleLink>
+      <TitleLink href={`blog/${data["id"]}`} target={"_blank"}><h1 className="blog-post-title mb-1">{data["title"]}</h1></TitleLink>
       <BlogPreviewComp1 data={{
                                   dateCreated: data.dateCreated,
                                   userName: data["authorDetails"]["userName"],

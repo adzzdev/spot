@@ -30,6 +30,7 @@ export default function ComponentIndex(){
     })
     return (
         <>
+        <main className="container">
             <div className="mt-4">
                 <h1>Components</h1>
             </div>
@@ -48,6 +49,7 @@ export default function ComponentIndex(){
                     </div>
                 </div>
             </section>
+        </main>
         </>
     )
 }

@@ -1,33 +1,38 @@
 import React from 'react'
 import { BrowserRouter as Router, Route, Routes, Navigate} from "react-router-dom"
 
-import Topbar from "./components/Topbar/Topbar"
+import PrivateRoute from './components/Route/PrivateRoute';
+import { AppDataProvider } from './contexts/AppDataContext';
+import AuthenticationContext from "./contexts/AuthenticationContext"
 
 import HookMain from "./lrn-hooks";
 import HookDetail from "./lrn-hooks/details";
 import ContextMain from "./contexts";
-import MiniHome from './mini/MiniHome';
-import MiniDetail from "./mini/MiniDetail"
-import { AppDataProvider } from './contexts/AppDataContext';
-import BlogHome from './blog/BlogHome';
-import BlogDetails from './blog/BlogDetails';
+
 import About from './pages/About';
 import Staging from './pages/Staging';
 import ComponentIndex from './pages/Component';
+import RegisterIndex from './pages/Register';
+
+import MiniHome from './mini/MiniHome';
+import MiniDetail from "./mini/MiniDetail"
+import BlogHome from './blog/BlogHome';
+import BlogDetails from './blog/BlogDetails';
 
 import ShowcaseFactory from './components/__module/ShowcaseFactory';
+
 
 
 export default function Application(props) {
     return(
         <>
             <Router>
-                <Topbar/>
-                <div className='container mb-4'>
-                    <AppDataProvider>
-                        <Routes>
-                            <Route exact path="/" element={<Navigate to="blog"></Navigate>}></Route>
-                            
+                <AppDataProvider>
+                    <Routes>
+                        <Route exact path="/" element={<Navigate to="app/blog"></Navigate>}></Route>
+                        <Route exact path="register" element={<RegisterIndex></RegisterIndex>}></Route>
+                        <Route path="about" element={<About/>}></Route>
+                        <Route exact path="app" element={<PrivateRoute></PrivateRoute>}>
                             {/* <Route path="topics">
                                 <Route exact path="hooks" element={<HookMain/>}></Route>
                                 <Route path="hooks/:title" element={<HookDetail/>}></Route>
@@ -43,16 +48,11 @@ export default function Application(props) {
                             <Route path="component" element={<ComponentIndex/>}></Route>
                             <Route path="component/infobox" element={<ShowcaseFactory componentPath="infobox"></ShowcaseFactory>}></Route>
                             
-                           
-                            
-
-                            <Route path="about" element={<About/>}></Route>
-                            
                             <Route path="staging" element={<Staging/>}></Route>
-                            <Route exact path="*" element={<div className='mt-4'><p>Page cannot be found.</p></div>}></Route>
-                        </Routes>
-                    </AppDataProvider>
-                </div>
+                        </Route>
+                        <Route exact path="*" element={<div className='container'><div className='mt-4'><p>Page cannot be found.</p></div></div>}></Route>
+                    </Routes>
+                </AppDataProvider>
             </Router>
         </>
     );

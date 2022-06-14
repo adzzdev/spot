@@ -3,7 +3,7 @@ import InfoBox from './InfoBox'
 
 export default function InfoBoxShowcase() {
   return (
-    <div className='container-fluid mt-4'>
+    <div className='container mt-4'>
       <div className='row'>
         <div className='col-12'>
           <h1>Info Boxes</h1>

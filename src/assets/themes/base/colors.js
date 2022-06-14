@@ -122,6 +122,11 @@ const colors = {
         main: "#3b5998",
         dark: "#344e86",
       },
+
+      google: {
+        main: "#ea4335",
+        dark: "#e12717",
+      },
   
       twitter: {
         main: "#55acee",

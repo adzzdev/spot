@@ -17,6 +17,19 @@
         "featuredBlogIDs":[],
         "blogs":[
             {
+                "id": "14",
+                "title": "Implementing Public/Private Routing using react-router-dom",
+                "shortDescription": "Guide on how to implement public and private routing in react. ( This is a place holder )",
+                "author":"adzz",
+                "path": "14",
+                "topic": "React",
+                "tags":["React"],
+                "dateCreated": "2022-06-14T19:17:00+08:00",
+                "markdown":"",
+                "markdownLocal": "",
+                "preview": "partial"
+            },
+            {
                 "id": "13",
                 "title": "Deploy and host React App to Firebase",
                 "shortDescription": "Guide on how to deploy your react applications in firebase.",

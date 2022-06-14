@@ -48,7 +48,7 @@ InfoBox.propTypes = {
   iconBGClass: PropTypes.oneOf(["bg-primary", "bg-secondary", "bg-success", "bg-danger", "bg-warning", "bg-info", "bg-dark", "bg-white","bg-light"]),
   dataLabel: PropTypes.string,
   dataText: PropTypes.string,
-  progress: PropTypes.oneOf(NullProgress, Progress)
+  progress: PropTypes.oneOf([NullProgress, Progress])
 }
 
 export default InfoBox;
