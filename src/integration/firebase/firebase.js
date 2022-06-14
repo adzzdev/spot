@@ -31,22 +31,30 @@ export const app = initializeApp(firebaseConfig);
 export const analytics = getAnalytics(app);
 
 //authentication
-export const auth = getAuth();
-export const signin = signInWithEmailAndPassword;
-export const createUser = createUserWithEmailAndPassword;
-export const signout = signOut;
+const auth = getAuth();
 
 //firestore
-const db = getFirestore(app);
+const firestore = getFirestore(app);
 
 
 //connection  to emulator Suite if the app is in Localhost.
 if (window.location.hostname === "localhost") {
   console.log("--FIREBASE: Using Firestore Emulator--");
-  connectFirestoreEmulator(db,"localhost",8080);
+  connectFirestoreEmulator(firestore,"localhost",8080);
 
   console.log("--FIREBASE: Using Authentication Emulator--");
   connectAuthEmulator(auth, `http://localhost:9099`);
 }
 
-export const database = db;
+const FIREBASE = {
+  firestore: {
+    FIRESTORE: firestore
+  },
+  authentication: {
+    AUTH: auth,
+    signInWithEmailAndPassword: signInWithEmailAndPassword,
+    createUserWithEmailAndPassword: createUserWithEmailAndPassword,
+    signOut: signOut
+  }
+}
+export default FIREBASE;

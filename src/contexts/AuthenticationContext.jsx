@@ -1,5 +1,10 @@
 import React, { useContext, useState, useEffect } from "react"
-import { auth, signin, signout, createUser } from "../integration/firebase/firebase"
+import firebase from "../integration/firebase/firebase"
+
+const auth = firebase.authentication.AUTH;
+const signInWithEmailAndPassword = firebase.authentication.signInWithEmailAndPassword;
+const signOut = firebase.authentication.signOut;
+const createUserWithEmailAndPassword = firebase.authentication.createUserWithEmailAndPassword;
 
 const AuthContext = React.createContext();
 
@@ -16,7 +21,7 @@ export function AuthProvider({ children }) {
   }
 
   async function login(email, password) {
-    return signin(auth, email, password)
+    return signInWithEmailAndPassword(auth, email, password)
       .then((userCredential) => {
         // Succesfully signed-in
         const user = userCredential.user;
@@ -33,7 +38,7 @@ export function AuthProvider({ children }) {
 
   async function logout() {
     setLoading(true)
-    return signout(auth).then((val)=>{
+    return signOut(auth).then((val)=>{
       setLoading(false);
       return val;
     });

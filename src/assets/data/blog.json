@@ -17,6 +17,32 @@
         "featuredBlogIDs":[],
         "blogs":[
             {
+                "id": "16",
+                "title": "Firebase Authentication + User Management",
+                "shortDescription": "Understand how to use firebase authentication and use it for your application's user management.",
+                "author":"adzz",
+                "path": "16",
+                "topic": "React",
+                "tags":["React"],
+                "dateCreated": "2022-06-15T02:13:00+08:00",
+                "markdown":"",
+                "markdownLocal": "",
+                "preview": "partial"
+            },
+            {
+                "id": "15",
+                "title": "Form Submission without using button[type='submit']",
+                "shortDescription": "Guide on how to programmatically submit a form in react without using a submit button.",
+                "author":"adzz",
+                "path": "15",
+                "topic": "React",
+                "tags":["React"],
+                "dateCreated": "2022-06-15T02:00:00+08:00",
+                "markdown":"",
+                "markdownLocal": "",
+                "preview": "partial"
+            },
+            {
                 "id": "14",
                 "title": "Implementing Public/Private Routing using react-router-dom",
                 "shortDescription": "Guide on how to implement public and private routing in react. ( This is a place holder )",
