@@ -1,0 +1,3 @@
+/**
+ * Define here the InfoboxRoot
+ */

@@ -6,6 +6,7 @@ import { Toast } from '../../../assets/util/swal';
 
 import firebase from "../../../integration/firebase/firebase";
 import { doc, setDoc } from "firebase/firestore"; 
+import {useNavigate} from "react-router-dom"
 
 const { createUserWithEmailAndPassword } = firebase.authentication;
 
@@ -54,6 +55,7 @@ const GoogleButton = styled(UserButton)`
 `
 export default function RegistrationForm() {
     const regForm = useRef();
+    const navigate = useNavigate();
     const onSubmitHandler = function(e){
         e.preventDefault();
         console.log(e);
@@ -79,16 +81,17 @@ export default function RegistrationForm() {
         createUserWithEmailAndPassword(firebase.authentication.AUTH, email, password)
             .then(function(registeredUser){
                 console.log(registeredUser);
+                setDoc(doc(firebase.firestore.FIRESTORE, "spt_user",registeredUser.user.uid), {
+                    firstName: firstName,
+                    lastName: lastName,
+                    email: email,
+                    username: username,
+                });
+                navigate("/app/", { replace: true });
                 Toast.fire({
                     icon: 'success',
                     title: 'Registered a new user.'
                 });
-                    setDoc(doc(firebase.firestore.FIRESTORE, "spt_user",registeredUser.user.uid), {
-                        firstName: firstName,
-                        lastName: lastName,
-                        email: email,
-                        username: username,
-                    });
             }).catch(function(error){
                 Toast.fire({
                     icon: 'error',

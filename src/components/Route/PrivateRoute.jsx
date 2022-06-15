@@ -1,17 +1,10 @@
 import React from "react"
 import { Nav } from "react-bootstrap";
 import { Route, Navigate, Outlet, useLocation, useNavigate } from "react-router-dom"
+import { useAuth } from "../../contexts/AuthenticationContext";
 
 import Topbar from "../Topbar";
 
-/**
- * Dummy auth hook for the meantime
- */
- const useAuth = ()=>{
-  return{
-    currentUser:true
-  }
-}
 
 
 export default function PrivateRoute(props){
@@ -81,7 +74,7 @@ const PrivateWrapper = (props) => {
         <Topbar></Topbar>
         <Outlet />
         </>
-      ): <Navigate to="/login" />);  
+      ): <Navigate to="/register" />);  
   }
       
 };

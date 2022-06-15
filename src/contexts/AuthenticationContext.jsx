@@ -37,7 +37,7 @@ export function AuthProvider({ children }) {
   }
 
   async function logout() {
-    setLoading(true)
+    setLoading(true);
     return signOut(auth).then((val)=>{
       setLoading(false);
       return val;
@@ -68,6 +68,7 @@ export function AuthProvider({ children }) {
       setLoading(false);
     },function(err){
       console.log("There was an error on Auth State Change");
+      console.log(err);
     },function(completed){
       console.log("Auth State changed successfully!");
       console.log(completed)
