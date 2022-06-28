@@ -31,7 +31,7 @@ const SampleA = ({ children, ...props }) => (
 const Sample = ()=>{
     return <DemoFactory title="useLocalStorage" />;
 }
-export default function Staging() {
+export default function StagingIndex() {
   console.log(markdown1);
 
   const [post, setPost] = useState('');

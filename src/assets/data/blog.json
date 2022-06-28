@@ -17,7 +17,7 @@
         "featuredBlogIDs":[],
         "blogs":[
             {
-                "id": "16",
+                "id": "17",
                 "title": "Firebase Authentication + User Management",
                 "shortDescription": "Understand how to use firebase authentication and use it for your application's user management.",
                 "author":"adzz",
@@ -27,7 +27,24 @@
                 "dateCreated": "2022-06-15T02:13:00+08:00",
                 "markdown":"",
                 "markdownLocal": "",
-                "preview": "partial"
+                "preview": "partial",
+                "published": false,
+                "publishDate": ""
+            },
+            {
+                "id": "16",
+                "title": "No SQL Database Design",
+                "shortDescription": "Guide for Basic No SQL database design",
+                "author":"adzz",
+                "path": "16",
+                "topic": "React",
+                "tags":["React"],
+                "dateCreated": "2022-06-15T19:27:00+08:00",
+                "markdown":"",
+                "markdownLocal": "",
+                "preview": "partial",
+                "published": false,
+                "publishDate": ""
             },
             {
                 "id": "15",
@@ -40,7 +57,9 @@
                 "dateCreated": "2022-06-15T02:00:00+08:00",
                 "markdown":"",
                 "markdownLocal": "",
-                "preview": "partial"
+                "preview": "partial",
+                "published": false,
+                "publishDate": ""
             },
             {
                 "id": "14",
@@ -53,7 +72,9 @@
                 "dateCreated": "2022-06-14T19:17:00+08:00",
                 "markdown":"",
                 "markdownLocal": "",
-                "preview": "partial"
+                "preview": "partial",
+                "published": false,
+                "publishDate": ""
             },
             {
                 "id": "13",
@@ -66,7 +87,9 @@
                 "dateCreated": "2022-06-08T22:30:00+08:00",
                 "markdown":"",
                 "markdownLocal": "2022060802.md",
-                "preview": "partial"
+                "preview": "partial",
+                "published": true,
+                "publishDate": "2022-06-08T22:30:00+08:00"
             },
             {
                 "id": "12",
@@ -79,7 +102,9 @@
                 "dateCreated": "2022-06-08T01:49:00+08:00",
                 "markdown":"",
                 "markdownLocal": "2022060801.md",
-                "preview": "full"
+                "preview": "full",
+                "published": true,
+                "publishDate": "2022-06-08T01:49:00+08:00"
             },
             {
                 "id": "4",
@@ -92,7 +117,9 @@
                 "dateCreated": "2022-05-26T03:15:00+08:00",
                 "markdown":"",
                 "markdownLocal": "",
-                "preview": "partial"
+                "preview": "partial",
+                "published": true,
+                "publishDate": "2022-05-26T03:15:00+08:00"
             }
         ]
     }

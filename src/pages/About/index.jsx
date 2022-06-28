@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function About() {
+export default function AboutIndex() {
   return (
     <div>About</div>
   )

@@ -44,7 +44,7 @@ const ActionButtons = function(props){
     )
 };
 
-export default function Dashboard(){
+export default function DashboardIndex(){
     const auth = useAuth();
     const currentUser = auth.currentUser;
     return (
