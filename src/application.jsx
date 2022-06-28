@@ -2,6 +2,7 @@ import React from 'react'
 import { BrowserRouter as Router, Route, Routes, Navigate} from "react-router-dom"
 
 import PrivateRoute from './components/Route/PrivateRoute';
+import PublicRoute from "./components/Route/PublicRoute";
 import { AppDataProvider } from './contexts/AppDataContext';
 
 import HookMain from "./lrn-hooks";
@@ -34,7 +35,16 @@ export default function Application(props) {
                         <Routes>
                             <Route exact path="/" element={<Navigate to="blog"></Navigate>}></Route>
                             <Route exact path="register" element={<RegisterIndex></RegisterIndex>}></Route>
-                            <Route path="about" element={<About/>}></Route>
+                            
+                            {/* public routing with layout */}
+                           <Route exact path="/" element={<PublicRoute></PublicRoute>}>
+                                <Route path="about" element={<About/>}></Route>
+                                <Route path="blog" element={<BlogIndex/>}></Route>
+                                <Route path="blog/:id" element={<BlogDetails></BlogDetails>}></Route>
+                                <Route exact path="*" element={<div className='container'><div className='mt-4'><p>Page cannot be found.</p></div></div>}></Route>
+                           </Route>
+
+                            {/* private routing with layout */}
                             <Route exact path="app" element={<PrivateRoute></PrivateRoute>}>
                                 {/* <Route path="topics">
                                     <Route exact path="hooks" element={<HookMain/>}></Route>
@@ -54,9 +64,6 @@ export default function Application(props) {
 
                                 <Route path="staging" element={<Staging/>}></Route>
                             </Route>
-                            <Route path="blog" element={<BlogIndex/>}></Route>
-                            <Route path="blog/:id" element={<BlogDetails></BlogDetails>}></Route>
-                            <Route exact path="*" element={<div className='container'><div className='mt-4'><p>Page cannot be found.</p></div></div>}></Route>
                         </Routes>
                     </AuthProvider>
                 </AppDataProvider>
