@@ -39,13 +39,32 @@
             "address": "Makati, Philippines",
             "phoneNumber": "523712312",
             "role":[1,2,3],
+            "title": "Web Application Developer",
             "badges":[
                 { "name": "Newbie", "color": "secondary" },
                 { "name": "Web Development", "color": "success" },
                 { "name": "Javascript", "color": "warning" }
             ],
             "profileURL": "https://avatars.dicebear.com/api/identicon/adzz.svg",
-            "headline": "Trying to learn how to code."
+            "headline": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem voluptatem, sequi nisi reiciendis molestiae esse earum provident blanditiis voluptatibus doloribus impedit eveniet veniam omnis, ipsam et saepe. Repudiandae, quos porro!.",
+            "links":[
+                {
+                    "site": "twitter",
+                    "link": "https://twitter.com"
+                },
+                {
+                    "site": "github",
+                    "link": "github.com"
+                },
+                {
+                    "site": "facebook",
+                    "link": "https://facebook.com"
+                },
+                {
+                    "site": "google",
+                    "link": "https://google.com"
+                }
+            ]
         },
         {
             "id": 2,
@@ -58,11 +77,30 @@
             "address": "5th Wall St Sample City US",
             "phoneNumber": "523712312",
             "role":[4],
+            "title": "Unknown",
             "badges":[
                 { "name": "Newbie", "color": "secondary" }
             ],
             "profileURL": "https://avatars.dicebear.com/api/identicon/joanadoe.svg",
-            "headline": "Sample headline"
+            "headline": "Sample headline",
+            "links":[
+                {
+                    "site": "twitter",
+                    "link": "twitter.com"
+                },
+                {
+                    "site": "github",
+                    "link": "https://github.com"
+                },
+                {
+                    "site": "facebook",
+                    "link": "https://facebook.com"
+                },
+                {
+                    "site": "google",
+                    "link": "https://google.com"
+                }
+            ]
         },
         {
             "id": 3,
@@ -75,11 +113,30 @@
             "address": "5th Wall St Sample City US",
             "phoneNumber": "523712312",
             "role":[4],
+            "title": "Unknown",
             "badges":[
                 { "name": "Newbie", "color": "secondary" }
             ],
             "profileURL": "https://avatars.dicebear.com/api/identicon/johndoe.svg",
-            "headline": "Sample headline"
+            "headline": "Sample headline",
+            "links":[
+                {
+                    "site": "twitter",
+                    "link": "https://twitter.com"
+                },
+                {
+                    "site": "github",
+                    "link": "https://github.com"
+                },
+                {
+                    "site": "facebook",
+                    "link": "https://facebook.com"
+                },
+                {
+                    "site": "google",
+                    "link": "https://google.com"
+                }
+            ]
         }
     ]
 }

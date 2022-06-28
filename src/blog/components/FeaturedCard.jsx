@@ -31,7 +31,7 @@ export default function FeaturedCard(props) {
             <h3 className="mb-0">{data["title"]}</h3>
             <div className="mb-1 text-muted">{moment(data["dateCreated"]).fromNow()}</div>
             {/* <p className="card-text mb-auto">{data["shortDescription"]}</p> */}
-            <Link to={data["path"]} className="stretched-link">Continue reading</Link>
+            <Link to={`blog/${data["path"]}`} className="stretched-link">Continue reading</Link>
         </div>
         {thumbnail}
     </div>

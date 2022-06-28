@@ -1,15 +1,15 @@
 import React, {useState} from 'react'
-import FeaturedCard from './components/FeaturedCard'
-import FeaturedHeader from './components/FeaturedHeader'
-import PartialBlogPreview from './components/PartialBlogPeview'
-import FullBlogPreview from './components/FullBlogPreview'
-import BlogPreviewFactory from './BlogPreviewFactory'
+import FeaturedCard from '../../blog/components/FeaturedCard'
+import FeaturedHeader from '../../blog/components/FeaturedHeader'
+import PartialBlogPreview from '../../blog/components/PartialBlogPeview'
+import FullBlogPreview from '../../blog/components/FullBlogPreview'
+import BlogPreviewFactory from '../../blog/BlogPreviewFactory'
 
-import userService from '../db/UserService'
-import blogService from '../db/BlogService'
+import userService from '../../db/UserService'
+import blogService from '../../db/BlogService'
 
 
-export default function BlogHome() {
+export default function BlogIndex() {
 
   const [page, setPage] = useState(0);
   const blogMainInfo = blogService.getMainInfo();

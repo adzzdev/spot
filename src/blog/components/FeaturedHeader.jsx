@@ -17,7 +17,7 @@ export default function FeaturedHeader(props) {
         <div className="col-md-6 px-0">
           <h1 className={`${style.display__4} fst-italic`}>{data["title"]}</h1>
           <p className="lead my-3">{data["shortDescription"]}</p>
-          <p className="lead mb-0"><a href={"/blog/" + data["path"]} target="_blank" className="text-white fw-bold">Continue reading...</a></p>
+          <p className="lead mb-0"><a href={"blog/" + data["path"]} target="_blank" className="text-white fw-bold">Continue reading...</a></p>
         </div>
     </div>
   )

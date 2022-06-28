@@ -8,6 +8,7 @@ import SyntaxHighlighter from "./components/SyntaxHighlighter";
 
 
 import useBlogMDFetch from "../lrn-hooks/hooks/useBlogMDFetch";
+import AuthorInfo from "./components/AuthorInfo";
 
 export default function BlogDetails() {
     let { id } = useParams();
@@ -16,7 +17,7 @@ export default function BlogDetails() {
 
     const blogMD = useBlogMDFetch(blog.markdownLocal);
   return (
-    <div className="container-fluid mt-4">
+    <div className="container mt-4">
         <div className="row">
         <div className="col-xl-8">
     <article className="blog-post mb-4">
@@ -43,7 +44,8 @@ export default function BlogDetails() {
     </div>
     
     <div className="col-xl-4" >
-        <UserInfo author={{value: author.userName, key: "userName"}}></UserInfo>
+        {/* <UserInfo author={{value: author.userName, key: "userName"}}></UserInfo> */}
+        <AuthorInfo author={{value: author.userName, key: "userName"}}></AuthorInfo>
     </div>
         </div>
     

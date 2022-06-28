@@ -142,7 +142,7 @@ class BlogService{
             const featuredBlogIDs = this.getFeaturedBlogs().map((blog)=>{
                 return blog.id;
             });
-            if(this.getMainBlog().id === blog.id || featuredBlogIDs.includes(blog.id)){
+            if(this.getMainBlog().id === blog.id || featuredBlogIDs.includes(blog.id) || !blog.published){
                 return false;
             }else{
                 return true;
